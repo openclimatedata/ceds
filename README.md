@@ -3,7 +3,7 @@ anthropogenic emissions of reactive gases and aerosols in the
 [Community Emissions Data System (CEDS)](http://www.globalchange.umd.edu/ceds/)
 
 ## Data
-This makes the annual data of the by country and by sector CSV files from the [Data Supplement](https://www.geosci-model-dev.net/11/369/2018/gmd-11-369-2018-assets.html) of Hoesly et al.  available in a single long file format.
+This makes the annual data of the by country and by sector CSV files from the [Data Supplement](https://www.geosci-model-dev.net/11/369/2018/gmd-11-369-2018-assets.html) of Hoesly et al. available in a single long file format.
 
 Changes compared to the original data:
   - country code `XKX` for Kosovo instead of `srb (kosovo)`
