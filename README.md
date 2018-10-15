@@ -2,13 +2,19 @@
 anthropogenic emissions of reactive gases and aerosols in the
 [Community Emissions Data System (CEDS)](http://www.globalchange.umd.edu/ceds/)
 
+For the repository of the CEDS project see <https://github.com/JGCRI/CEDS/>.
+Maintainer of this Data Package is Robert Gieseke (<robert.gieseke@pik-potsdam.de>).
+
 ## Data
 This makes the annual data of the by country and by sector CSV files from the [Data Supplement](https://www.geosci-model-dev.net/11/369/2018/gmd-11-369-2018-assets.html) of Hoesly et al. available in a single long file format.
 
 Changes compared to the original data:
+  - country codes are upper-cased
   - country code `XKX` for Kosovo instead of `srb (kosovo)`
   - country code 'BUNKERS' instead of `global`
   - fields with value 0 are not contained in the long format file
+  - in the category file <./data/sectors.yaml>, based on table 1 in Hoesly et
+    al. (2018) extra hyphens (e.g. 2-D_Other) have been removed
 
 ## Preparation
 
@@ -19,7 +25,6 @@ make
 ```
 
 to download and process the original files, which are downloaded to `cache`.
-
 
 ## Reference
 
