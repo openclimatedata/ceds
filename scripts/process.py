@@ -18,7 +18,7 @@ units = {i["name"]: i["schema"]["fields"][-1]["unit"]
 
 def read_ceds_csv(path):
     """Read a CEDS by country CSV file and return the global sum."""
-    df = pd.read_csv(path)
+    df = pd.read_csv(path, float_precision='round_trip')
     assert len(df.units.unique()) == 1
     df = df.drop(["em", "units"], axis=1)
     df = df.set_index("country")
