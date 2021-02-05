@@ -4,10 +4,15 @@ import json
 from pathlib import Path
 from pandas.testing import assert_series_equal
 
+# Process data released with Hoesly et al. (2018)
+
 
 root = Path(__file__).parents[1]
 
 datapath = root / "cache/Supplemental_Data_Correction/Data Supplement"
+outputpath = root / "data/2018"
+
+outputpath.mkdir(exist_ok=True)
 
 files = datapath.glob("*sector_country*.csv")
 
@@ -57,7 +62,7 @@ for f in files:
     df = df.set_index(["country", "sector", "year"])
     df = df.loc[~(df==0).all(axis=1)]
 
-    filename = root / "data" / str(species.lower() + ".csv")
+    filename = str(species.lower() + ".csv")
     print(filename, unit)
     # Check that unit in metadata is same as in file.
     assert units[species.lower()] == unit
@@ -75,4 +80,4 @@ for f in files:
     })
 
     df.Code = df.Code.apply(update_code)
-    df.to_csv(filename, index=False)
+    df.to_csv(outputpath / filename, index=False)
