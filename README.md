@@ -8,7 +8,7 @@ For the repository of the CEDS project see <https://github.com/JGCRI/CEDS/>.
 Maintainer of this repository is Robert Gieseke (<rob.g@web.de>).
 
 ## Data
-This repositoty makes the annual data of the by country and by sector CSV files from the [Data Supplement](https://www.geosci-model-dev.net/11/369/2018/gmd-11-369-2018-assets.html) of Hoesly et al. and the later update on Zenodo (http://doi.org/10.5281/zenodo.4025316) available in a single long CSV formatted file per emissions species.
+This repository makes the annual data of the by country and by sector CSV files from the [Data Supplement](https://www.geosci-model-dev.net/11/369/2018/gmd-11-369-2018-assets.html) of Hoesly et al. and the later update on Zenodo (http://doi.org/10.5281/zenodo.4025316) available in a single long CSV formatted file per emissions species.
 
 Changes compared to the original data:
   - country codes are upper-cased
